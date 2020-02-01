@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Meta-tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Daniele Di Salvo">
-    <meta name="title" content="login page">
-    <meta name="description" content="login form">
-    <meta name="copyright" content="login.html">
-    <meta name="robots" content="index,follow">
-    <meta name="keywords"
-          content="web site, ui, ux, webdesign, login, italy, designer, udine, website design, website builder, web developer">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Daniele Di Salvo" />
+    <meta name="title" content="login page" />
+    <meta name="description" content="login form" />
+    <meta name="copyright" content="login.html" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="keywords"
+      content="web site, ui, ux, webdesign, login, italy, designer, udine, website design, website builder, web developer"
+    />
     <!-- End Meta-tag -->
 
     <!-- Embed Font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/25485af4cf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/25485af4cf.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/firefox-brands.svg">
+    <link rel="icon" href="img/firefox-brands.svg" />
 
     <title>Sign in</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/Google-Style-Login.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div class="login-card">
-    <form class="form-signin" onsubmit="clientRegister()">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Google-Style-Login.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="login-card">
+      <form class="form-signin" onsubmit="clientRegister()">
         <label class="form-label">Username</label>
-        <input class="form-control" type="text" id="inputUsername" required="" placeholder="Username" autofocus="">
+        <input
+          class="form-control"
+          type="text"
+          id="inputUsername"
+          required=""
+          placeholder="Username"
+          autofocus=""
+        />
         <label class="form-label">Email</label>
-        <input class="form-control" type="email" id="inputEmail" required="" placeholder="Email address" autofocus="">
+        <input
+          class="form-control"
+          type="email"
+          id="inputEmail"
+          required=""
+          placeholder="Email address"
+          autofocus=""
+        />
         <label class="form-label">Password</label>
-        <input class="form-control" type="password" id="inputPassword" required="" placeholder="Password">
-        <p class="form-control-note text-gray-dark">Make sure it's at least 15 characters OR at least 8 characters
-            including a number and a lowercase letter.</p>
-        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign up</button>
-    </form>
-    <a class="forgot-password" href="#">Forgot your password?</a>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/application.js"></script>
-</body>
+        <input
+          class="form-control"
+          type="password"
+          id="inputPassword"
+          required=""
+          placeholder="Password"
+        />
+        <p class="form-control-note text-gray-dark">
+          Make sure it's at least 15 characters OR at least 8 characters
+          including a number and a lowercase letter.
+        </p>
+        <button
+          class="btn btn-primary btn-block btn-lg btn-signin"
+          type="submit"
+        >
+          Sign up
+        </button>
+      </form>
+      <a class="forgot-password" href="#">Forgot your password?</a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
+  </body>
 </html>

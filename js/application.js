@@ -2,20 +2,19 @@
  * Registra un utente sul local storage del Browser
  * */
 function clientRegister() {
+  localStorage.utente = JSON.stringify({
+    username: document.getElementById("inputUsername").value,
+    email: document.getElementById("inputEmail").value,
+    password: document.getElementById("inputPassword").value
+  });
 
-    localStorage.utente = JSON.stringify({
-        username: document.getElementById("inputUsername").value,
-        email: document.getElementById("inputEmail").value,
-        password: document.getElementById("inputPassword").value
-    });
+  var utente = JSON.parse(localStorage.utente);
 
-    var utente = JSON.parse(localStorage.utente);
+  alert("Benvenuto " + utente.username);
 
-    alert("Benvenuto " + utente.username);
-
-    saveToStorage();
+  saveToStorage();
 }
 
 function saveToStorage() {
-    localStorage.setItem("utente", JSON.stringify(utente))
+  localStorage.setItem("utente", JSON.stringify(utente));
 }
